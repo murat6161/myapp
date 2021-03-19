@@ -1,29 +1,21 @@
 import React, { Component } from 'react'
 import './App.css'
+import AddUser from './components/AddUser'
 import Navbar from './components/Navbar'
-import User from './components/User'
+import Users from './components/Users'
 
 export default class App extends Component {
+
+  
+
   render() {
     return (
       <div className="container">
         <Navbar title = "User App"/>
         <hr/>
+        <AddUser/>
 
-        <User 
-        name = "Murat Gumus"
-        salary = "5000"
-        department = "Bilisim"/>
-
-    <User 
-        name = "Hakan Yilmaz"
-        salary = "4000"
-        department = "Pazarlama"/>
-
-      <User 
-        name = "Osman Turan"
-        salary = "6000"
-        department = "Uretim"/>    
+        <Users/>
       </div>
       
     )
